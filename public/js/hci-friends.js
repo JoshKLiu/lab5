@@ -5,6 +5,14 @@ $(document).ready(function() {
 	initializePage();
 })
 
+
+$('.anagram').click(function() {
+	var name = $(this).text();
+	name = anagrammedName(name);
+	$(this).text(name);
+	return false;
+})
+
 /*
  * Function that is called when the document is ready.
  */
